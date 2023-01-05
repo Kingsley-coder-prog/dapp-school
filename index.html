@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockchain Uni</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="./main.js" type="text/javascript"></script>
+    
+  </head>
+  <body class="bg-white">
+    
+    
+    <!-- Navbar section -->
+    <nav class="relative container-fluid mx-auto w-full  p-6 bg-gray-600">
+      <!-- Flex-container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a class="pt-2 text-4xl font-bold" href="#">Block<span class="text-emerald-400">Gem</span></a>
+        <!-- Menu Items -->
+        <div class="hidden font-semibold space-x-6 md:flex list-none">
+    
+    
+          <a class="hover:text-gray-400" href="#">Home</a>
+          <a class="hover:text-gray-400" href="#">Services</a>
+          <a class="hover:text-gray-400" href="#">Courses</a>
+          <a class="hover:text-gray-400" href="#">Contact Us</a>
+          <!-- Button -->
+          <button id="connectButton" onclick="connect()"
+            class="hidden md:block p-3 px-6 pt-2 text-white 
+            bg-emerald-500 rounded-full self-baseline hover:bg-emerald-700"
+            >
+            Connect Wallet
+          </button>
+        </div>
+
+        <!-- Hamburger icon -->
+        <button
+        id="menu-btn"
+        class="block hamburger md:hidden focus:outline-none"
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div id="menu" class="absolute flex-col items-center self-end 
+        py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto 
+        sm:self-center left-6 right-6 drop-shadow-md hidden">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#footer">Courses</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    
+    <div class="container flex-col text-center mx-6 p-6">
+      <h1 class="text-5xl p-3 font-semibold text-Gray400 hover:text-gray-600">Block<span class="text-emerald-400">Gem</span> University</h1>
+      <p class="text-3xl text-Gray400">
+        World number one platform for anything Blockchain education. <br>
+        Learn Crypto, <span class="font-semibold">NFTs</span> and Metaverse and how they shape technology.
+      </p>
+    </div>
+    
+    
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Flex container -->
+       <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+        <!-- Left Items -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+            Blockchain is for every industry
+          </h1>
+          <p class="max-w-sm text-center text-Gray400 md:text-left">
+            Where once blockchain and digital currencies served as instruments for speculation, they are now enabling
+            small-to-medium enterprise (SME) supply chain financing and global trade remittance.<br>
+            We believe there is great business potential beyond operational efficiencies that could change the way the industry
+            works and how suppliers collaborate along the chain.
+          </p>
+
+          <div class="flex justify-center md:justify-start">
+            <a 
+            href="#" 
+            class="md:block p-3 px-6 pt-2 text-white bg-emerald-500 rounded-full self-baseline hover:bg-emerald-700"
+            >Get Started</a>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="md:w-1/2 ">
+          <img class="border-white rounded-xl" src="./image/mentordev.jpg" alt="">
+        </div>
+       </div>     
+    </section>
+
+    <!-- Features  -->
+    <section id="features">
+      <!-- Flex container -->
+      <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+        <!-- What's different -->
+        <div class="flex flex-col space-y-12 md:w-1/2">
+          <h2 class="max-w-md text-4xl font-bold text-center">
+            What makes BlockGem a unique blockchain platform
+          </h2>
+          <p class="max-w-sm text-center text-Gray400 md:text-left">
+            One thing that differentiate a great platform from the rest is the innovation
+            that is brought into impacting knowledge. At BlockGem, our students are guaranteed a solid mentorship.
+          </p>
+        </div>
+
+        <!-- Numbered List -->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+          <!-- List Item 1 -->
+          <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+            <!-- Heading -->
+            <div class="rounded-l-full bg-Gray400 md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div 
+                  class="px-4 py-2 text-white rounded-full md:py-1 
+                  bg-emerald-500"
+                >
+                  01
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Reaching out every industry
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Reaching out to every industry
+              </h3>
+              <p class="text-Gray400">
+                We have broad variant of industries in our network. Slow but steadily, we are expanding the frontiers
+                of this nascent technology. It will soon become what the internet is in the 2000s
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 2 -->
+          <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+            <!-- Heading -->
+            <div class="rounded-l-full bg-Gray400 md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div class="px-4 py-2 text-white rounded-full md:py-1 
+                            bg-emerald-500">
+                  02
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Blockchain application in supply-chain
+                </h3>
+              </div>
+            </div>
+          
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Blockchain application in supply-chain
+              </h3>
+              <p class="text-Gray400">
+                Blockchain ease the problem of handling movement of products and tracks every place the products has passed down
+                It is such a powerful technology we are experiencing at this era of human existence.
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 3 -->
+          <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+            <!-- Heading -->
+            <div class="rounded-l-full bg-Gray400 md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div class="px-4 py-2 text-white rounded-full md:py-1 
+                            bg-emerald-500">
+                  03
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Financial use case of blockchain
+                </h3>
+              </div>
+            </div>
+          
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Financial use case of blockchain
+              </h3>
+              <p class="text-Gray400">
+                Blockchain is redefining money has we have known it. The decentralization that blockchain bring 
+                is to transfer ownership to the real owners of the assets. This is the banking the un-banked.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <!-- container to the heading and testm blocks -->
+      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+        <!-- Heading -->
+        <h2 class="text-4xl font-bold text-center">
+          What Makes BlockGem Stand Out?
+        </h2>
+        <!-- Testimonials container -->
+        <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+          <!-- Testimonial 1 -->
+          <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-100 md:w-1/3">
+            <img src="./image/Bratson.png" class="w-16 -mt-14" alt="">
+            <h5 class="text-lg font-bold">Bratson Lewi</h5>
+            <p class="text-sm text-Emerald500">
+              BlockGem is really leading the industry pack on blockchain education
+              with their cutting edge innovations.
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-gray-100 md:flex md:w-1/3">
+            <img src="./image/Steph.png" class="w-16 -mt-14" alt="">
+            <h5 class="text-lg font-bold">Stephanie Grags</h5>
+            <p class="text-sm text-Emerald500">
+              With BlockGem you can be sure of the latest trends in the industry delivered
+              for a low fee, what could be more better than this golden opportunity.
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-gray-100 md:flex md:w-1/3">
+            <img src="./image/Kimberly.png" class="w-16 -mt-14" alt="">
+            <h5 class="text-lg font-bold">Kimberly Ai</h5>
+            <p class="text-sm text-Emerald500">
+              Transitioning and adopting the blockchain technology seem really difficult, but trusting the work
+              to an experienced platform like BlokGem, everything seem like a piece of cake.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Button -->
+        <div class="my-16">
+          <a 
+          href="#" 
+          class="p-3 px-6 pt-2 text-white bg-emerald-500 rounded-full baseline hover:bg-emerald-700"
+          >Get Started</a>
+            
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="bg-emerald-500">
+      <!-- Flex Container -->
+      <div class="container flex flex-col items-center justify-between 
+      px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+        <!-- Heading -->
+        <h2 class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">
+          Transition into the new age technology
+        </h2>
+        <!-- Button -->
+        <a 
+        href="#" 
+        class="p-3 px-6 pt-2 text-gray-400 bg-white rounded-full 
+        shadow-2xl baseline hover:bg-gray-900"
+        >Get Started</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+      <!-- Flex Container -->
+      <div class="container flex flex-col-reverse justify-between px-6 
+      py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+
+        <!-- Logo and social Links -->
+        <div class="flex flex-col-reverse items-center justify-between 
+        space-y-12 md:flex-col md:space-y-0 md:items-start">
+
+          <div class="mx-auto my-6 text-center text-white md:hidden">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+          <!-- Logo -->
+          <div>
+            <a class="pt-2 text-4xl text-white font-bold" href="#">Block<span class="text-emerald-400">Gem</span></a>
+          </div>
+
+          <!-- Social Links Container-->
+          <div class="flex justify-center space-x-4">
+            <!-- Link 1 -->
+            <a href="#">
+              <img src="./image/facebook1.svg" alt="facebook" class="h-8" />
+            </a>
+            <!-- Link 2 -->
+            <a href="#">
+              <img src="./image/pinterest.svg" alt="pinterest" class="h-8" />
+            </a>
+            <!-- Link 3 -->
+            <a href="#">
+              <img src="./image/twitter.svg" alt="twitter" class="h-8" />
+            </a>
+            <!-- Link 4 -->
+            <a href="#">
+              <img src="./image/instagram.svg" alt="instagram" class="h-8" />
+            </a>
+            <!-- Link 5 -->
+            <a href="#">
+              <img src="" alt="" class="h-8" />
+            </a>
+          </div>
+        </div>
+        <!-- List Container -->
+        <div class="flex justify-around space-x-32">
+
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="" class="hover:text-gray-200">Learn NFTs</a>
+            <a href="" class="hover:text-gray-200">Blockchain Developer</a>
+            <a href="" class="hover:text-gray-200">Build DApps</a>
+            <a href="" class="hover:text-gray-200">Blockchain Education</a>
+            <a href="" class="hover:text-gray-200">Etherem Network</a>
+          </div>
+
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="" class="hover:text-gray-200">Solidity Programming</a>
+            <a href="" class="hover:text-gray-200">Become Fullstack Web3
+              Developer
+            </a>
+            <a href="" class="hover:text-gray-200">Smart Contract 101</a>
+            <a href="" class="hover:text-gray-200">Intro to Blockchain
+              Framework
+            </a>
+            <a href="" class="hover:text-gray-200">Cryptography for Beginners</a>
+          </div>
+
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="" class="hover:text-gray-200">Mastering Ethereum</a>
+            <a href="" class="hover:text-gray-200">MAstering Bitcoin</a>
+            <a href="" class="hover:text-gray-200">DeFi</a>
+            <a href="" class="hover:text-gray-200">Blockchain Technical Writer</a>
+            <a href="" class="hover:text-gray-200">Crypto Analyst</a>
+          </div>
+        </div>
+
+        <!-- Input Container -->
+        <div class="flex flex-col justify-between">
+          <form>
+            <div class="flex space-x-3">
+              <input 
+              type="text" 
+              class="flex-1 px-4 rounded-full focus:outline-none"
+              placeholder="Stay uptodate with trends" 
+              />
+              <button 
+                class="px-6 py-2 text-white rounded-full bg-emerald-500 
+                hover:bg-emerald-400 focus:outline-none"
+              >
+                Begin
+              </button>
+            </div>
+          </form>
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
